@@ -9,7 +9,7 @@ cd $WM_PROJECT_USER_DIR/src/combustionModels
 ```
 Download the code to the src directory:
 ```
-git clone http://github.com/<yourRepoLink> <$WM_PROJECT_USER_DIR/src/combustionModels>
+git clone https://github.com/GontzalLopez/EDM_openfoam.git <$WM_PROJECT_USER_DIR/src/combustionModels>
 git archive -o output.zip
 ```
 Add EDM/EDM.C to Make/files using Vim
