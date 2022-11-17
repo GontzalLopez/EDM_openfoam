@@ -19,3 +19,33 @@ Compile:
 ```
 wmake
 ```
+In constant/combustionProperties:
+```
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      combustionProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+combustionModel EDM;
+
+EDMCoeffs
+{
+    semiImplicit    yes;
+    Cdiff	          4.0;
+    CEDM            4.0;
+}
+
+#include "reaction"
+// ************************************************************************* //
+```
